@@ -1,3 +1,1 @@
-web:
-gunicorn
-FinanceManager.wsgi
+web: gunicorn FinanceManager.wsgi
