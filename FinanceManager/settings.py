@@ -92,3 +92,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Login redirect
 LOGIN_REDIRECT_URL = 'home'
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-65fe7.up.railway.app/']
