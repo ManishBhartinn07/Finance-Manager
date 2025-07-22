@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: finance-manager
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SECRET_KEY
+        value: 04134e83a79acb2feb9733415d9aa52ca9eaf7ecbdb79dd56cdcb76d89d25af9
+      - key: JWT_SECRET_KEY
+        value: 04134e83a79acb2feb9733415d9aa52ca9eaf7ecbdb79dd56cdcb76d89d25af9
+      - key: MONGODB_URI
+        value: mongodb://localhost:27017/lms
